@@ -22,7 +22,7 @@ public class SoftwareEngineer {
         this.techStack = techStack;
     }
 
-    public Integer id() {
+    public Integer getId() {
         return id;
     }
 
@@ -30,7 +30,7 @@ public class SoftwareEngineer {
         this.id = id;
     }
 
-    public String name() {
+    public String getName() {
         return name;
     }
 
@@ -38,7 +38,7 @@ public class SoftwareEngineer {
         this.name = name;
     }
 
-    public String techStack() {
+    public String getTechStack() {
         return techStack;
     }
 
