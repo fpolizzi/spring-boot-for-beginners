@@ -1,9 +1,5 @@
 ### GET request to example server
 GET http://localhost:8080
 
-###
-
 ### GET software engineers
 GET http://localhost:8080/api/v1/software-engineers
-
-###
