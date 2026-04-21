@@ -1,12 +1,17 @@
 package com.fpolizzi;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
 import java.util.Objects;
 
 /**
  * Created by fpolizzi on 14.04.26
  */
+@Entity
 public class SoftwareEngineer {
 
+    @Id
     private Integer id;
     private String name;
     private String techStack;
