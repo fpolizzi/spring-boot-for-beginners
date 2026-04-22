@@ -1,9 +1,6 @@
 package com.fpolizzi;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -28,7 +25,7 @@ public class SoftwareEngineerController {
 
     @PostMapping
     public void addNewSoftwareEngineer(
-            SoftwareEngineer softwareEngineer) {
+            @RequestBody SoftwareEngineer softwareEngineer) {
         softwareEngineerService.insertSoftwareEngineer(softwareEngineer);
     }
 }
