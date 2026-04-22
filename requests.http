@@ -4,7 +4,7 @@ GET http://localhost:8080
 ### GET software engineers
 GET http://localhost:8080/api/v1/software-engineers
 
-### Post new software engineer
+### POST new software engineer
 POST http://localhost:8080/api/v1/software-engineers
 Content-Type: application/json
 
@@ -12,3 +12,6 @@ Content-Type: application/json
   "name": "Jamila",
   "techStack": "Java Script, Node, React"
 }
+
+### GET a software engineer by id
+GET http://localhost:8080/api/v1/software-engineers/1
