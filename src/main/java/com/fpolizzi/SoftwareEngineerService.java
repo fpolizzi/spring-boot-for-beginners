@@ -33,4 +33,15 @@ public class SoftwareEngineerService {
         return softwareEngineerRepository.findById(id)
                 .orElseThrow(() -> new IllegalStateException(id + " not found"));
     }
+
+    public void deleteSoftwareEngineer(Integer id) {
+
+        boolean exists = softwareEngineerRepository.existsById(id);
+        if (!exists) {
+            throw new IllegalStateException(
+                    id + " not found"
+            );
+        }
+        softwareEngineerRepository.deleteById(id);
+    }
 }
