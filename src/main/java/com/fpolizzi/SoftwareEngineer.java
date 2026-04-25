@@ -23,7 +23,8 @@ public class SoftwareEngineer {
 
     public SoftwareEngineer(Integer id,
                             String name,
-                            String techStack, String learningPathRecommendation) {
+                            String techStack,
+                            String learningPathRecommendation) {
         this.id = id;
         this.name = name;
         this.techStack = techStack;
